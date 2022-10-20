@@ -1,0 +1,73 @@
+/* История */
+.ourstory__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ourstory__title, .ourgoals__title{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+.ourstory__subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+.ourstory__text, .ourgoals__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+@media only screen and (min-width: 750px){
+    .ourstory__wrapper{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .ourstory__img, .ourstory__info{
+        flex: 1;
+    }
+    .ourstory__title, .ourgoals__title{
+        font-size: 36px;
+    }
+    .ourstory__subtitle{
+        font-size: 18px;
+    }
+    .ourstory__text, .ourgoals__text{
+        font-size: 18px;
+        max-width: 800px;
+    }
+}
+/* Цели */
+.ourgoals__info{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.ourgoals__img__wrapper img{
+    object-fit: cover;
+}
+.ourgoals__img__wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.ourgoals__img1{
+    grid-row: 1/3;
+}
+@media only screen and (min-width: 750px){
+    .ourgoals__info{
+        text-align: center;
+    }
+    .ourgoals__img__wrapper{
+        gap: 20px;
+    }
+    .ourgoals__text{
+        margin: 0 auto;
+    }
+}
